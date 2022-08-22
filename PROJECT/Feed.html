@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ElectroMania</title>
+    <link rel="icon" href="energy.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="CSS/feed.css">
+	<script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body>
+ <div class="feedback-section">
+ <h3>GIVE YOUR FEEDBACK </h3>
+ <div class="border"></div>
+ <div class="container">
+   <form>
+	   <br>
+		<p style="color:#00ffff">How satisfied were you with our Products/Service?</p><br>
+		<input type="radio" name="feedback" value="Excellent" id="O" /> Excellent &nbsp &nbsp &nbsp &nbsp
+	    <input type="radio" name="feedback" value="Good"  /> Good <br><br>
+		<input type="radio" name="feedback" value="Neutral"  /> Neutral &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="radio" name="feedback" value="Poor"  /> Poor <br><br>
+		<p style="color:#00ffff">If you have specific feedback, please write to us...</p>
+		<div class="txt">
+		<textarea name = "address" cols="30" rows="5" placeholder="Enter your opinions here.."></textarea>
+		</div>
+		<br>
+		<div class="id">
+		  <input type="text" placeholder="Your Name">
+		  <i class="far fa-user"></i>
+		  <input type="email" placeholder="Your Email" >
+		  <i class="far fa-envelope"></i>
+	   </div>
+	   
+	   <a  class="sumbit" onclick="fun()" href="Index.html"> SEND </a>
+   </form>
+   <script>
+   function fun()
+        {
+          alert("THANK YOU FOR YOUR FEEDBACK!");
+        }
+      </script>
+ </div>
+ </div>
+</body>
+</html>

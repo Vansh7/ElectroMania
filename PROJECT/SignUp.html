@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <head>
+    <title>ElectroMania</title>
+    <link rel="icon" href="energy.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form action="" name="reg_form" onsubmit="return validate()">
+        <label>First Name</label> 
+        <input type="text" name="fname" placeholder=""  / >
+        <label>Last Name</label>
+        <input type="text" name="lname" placeholder=""  / >
+        <label>Email</label>
+        <input type="email" name="email" placeholder="" / >
+        <label>Password</label>
+        <input type="password" name="password" placeholder=""  / >
+        <label>Confirm Password</label>
+        <input type="password" placeholder=""  / ><br><br>
+      <a href="Index.html">  <input type="submit" class="submit" name="submit" value="Submit" >  </a>
+      </form>
+      <script>    
+        function validate() {    
+            var fname = document.reg_form.fname;    
+            var lname = document.reg_form.lname;      
+            var email = document.reg_form.email;    
+            var password = document.reg_form.password;         
+    
+            if (fname.value.length <= 0) {    
+                alert("Name is required");    
+                fname.focus();    
+                return false;    
+            }    
+            if (lname.value.length <= 0) {    
+                alert("Last Name is required");    
+                lname.focus();    
+                return false;    
+            }      
+            if (email.value.length <= 0) {    
+                alert("Email Id is required");    
+                email.focus();    
+                return false;    
+            }    
+            if (password.value.length <= 8) {    
+                alert("Enter Correct Password");     
+                mobile.focus();    
+                return false;    
+            }      
+            return false;    
+        }    
+    </script> 
+    <script>
+    </script>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="privacy.html">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="Login.html">Login here</a>
+    </p>
+  </body>
+</html>
+
+
