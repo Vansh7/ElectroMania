@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding 0;
+	font-family:'Poppins',sans-serif;
+	box-sizing:border-box;
+	outline : none;
+	color:#fff;
+}
+
+
+body{
+	display:flex;
+	min-height:100vh;
+	align-items: center;
+	justify-content:center;
+	background: url("images/apple_.jpg") no-repeat center;
+    background-size: cover;
+}
+.feedback-section h3{
+    text-align: center;
+    color: #ddd;
+    font-size: 3rem;
+	padding: 0;
+  }
+ .feedback-section h3:hover{
+    color:#00FFFF;
+  }
+ .border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 10px auto;
+  }
+
+.container{
+	width: 500px;
+	background:#000;
+	box-shadow: 0 0 8px rgba(250,250,250,0.6);
+	opacity:0.6;
+	padding-bottom: 10px;
+}
+.container form{
+	width:100%;
+    text-align:center;
+    padding :25px 20 px;
+    	
+}
+
+form .id{
+	position :relative;
+	padding-bottom: 10px;
+}
+
+form input[type=text]{
+	 width:40%;
+	 height:30px;
+	 margin: 4px 0;
+	 border:1px solid #5c5c5c;
+	 border-radius:3;
+	 background:#181717;
+	 padding: 0 15px;
+	 font-size:20px;
+	  
+}
+
+form input[type=email]{
+	 width:40%;
+	 height:30px;
+	 margin: 4px 0;
+	 border:1px solid #5c5c5c;
+	 border-radius:3;
+	 background:#181717;
+	 padding: 0 15px;
+	 padding-right:45px;
+	 font-size:20px;
+	  
+}
+form textarea
+{
+	 padding: 5px 15px;
+	 border:1px solid #5c5c5c;
+	 border-radius:3;
+	 background:#181717;
+	 font size:20px;
+	 width:90%;
+	 margin: 4px 0
+	 
+}
+form .sumbit{
+	
+	border:none;
+	background:#00FFFF;
+	color:#222;
+	padding:3px 150px;
+	width: 100%;
+	font-size:20px;
+	font-weight:800;
+	cursor:pointer;
+	border-radius:3px;
+	text-decoration: none;
+	
+}
+form input:focus::placeholder,form textarea:focus::placeholder{
+	padding-left:4px;
+	color:#00FFFF;
+	transition:all 0.3s ease;
+}
+form input:focus + i{
+	color:#00FFFF;
+	transition:all 0.3s ease;
+}
